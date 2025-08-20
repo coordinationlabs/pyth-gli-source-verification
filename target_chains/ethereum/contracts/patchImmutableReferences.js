@@ -38,4 +38,6 @@ for (const [refName, refDetails] of Object.entries(immutableReferences)) {
     console.log(`  Updated bytecode after processing ${refName}`);
 }
 
-console.log('Final patched bytecode:', bytecode);
+console.log('Contract creation code: \n', data["bytecode"].replace(/^0x/, ''));
+console.log('------------------------------------------------------------------------------------------------');
+console.log('Final patched deployed bytecode: \n', '0x' + bytecode);

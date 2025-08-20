@@ -26,7 +26,8 @@
     "install-forge-deps": "forge install foundry-rs/forge-std@v1.7.6 --no-git --no-commit",
     "coverage": "./coverage.sh",
     "test:format": "prettier --check .",
-    "fix:format": "prettier --write ."
+    "fix:format": "prettier --write .",
+    "gli-verify": "npm run build && node patchImmutableReferences.js"
   },
   "author": "",
   "license": "Apache-2.0",
